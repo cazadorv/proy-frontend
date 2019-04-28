@@ -1,0 +1,10 @@
+
+<!--este component debera mostrar el listado guaraddo en el componentClientesService-->
+<button (click)="anadirDatos(txtNombre.value)" >Mostrar clientes</button>
+
+<ul>
+    <div *ngFor="let nom of listaCliente">
+        <li>{{nom}}</li>
+    </div>
+</ul>
+<!--este component debera mostrar el listado generado-->

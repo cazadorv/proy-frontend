@@ -1,0 +1,19 @@
+<div>
+    <form >
+        <h2>Ingrese sus datos</h2>
+        <div class="form-group">
+            <input type="text" #txtNombre placeholder="Nombre">
+        </div>
+        <div class="form-group">
+            <input type="text" #txtApellido placeholder="Apellido">
+        </div>
+        <div class="form-group">
+            <input type="text"  #txtDireccion placeholder="Direccion">
+        </div>
+        
+        <div class="form-group">
+            <!--aca deberia guardar los datos obtenidos de los input-->
+            <button (click)="anadirDatos(txtNombre.value)" >Guardar datos</button>
+        </div>
+    </form>
+</div>

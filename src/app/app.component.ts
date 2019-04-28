@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proyecto frontend Neo Complexx';
+  title = 'Front-end para Neo Complexx';
 }
