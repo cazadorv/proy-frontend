@@ -1,20 +1,23 @@
 <div>
-    <form >
+    <form method="POST" class="form" (ngSubmit)="submit">
         <h2>Ingrese sus datos</h2>
         <div class="form-group">
             <label for="txtNombre">Nombre: </label>
-            <input type="text" id="txtNombre" placeholder="Nombre">
+            <input type="text" id="txtNombre" name="txtNombre" placeholder="Nombre" [ngModel]="model.Nombre"/>
         </div>
         <div class="form-group">
-            <input type="text" id="txtApellido" placeholder="Apellido">
+            <label for="txtApellido">Apellido: </label>
+            <input type="text" id="txtApellido" name="txtApellido"  placeholder="Apellido" [ngModel]="model.Apellido"/>
         </div>
         <div class="form-group">
-            <input type="text"  id="txtDireccion" placeholder="Direccion">
+            <label for="txtDireccion">Direccion: </label>
+            <input type="text"  id="txtDireccion" name="txtDireccion" placeholder="Direccion" [ngModel]="model.Direccion"/>
         </div>
         
         <div class="form-group">
-            <!--aca deberia guardar los datos obtenidos de los input-->
-            <button (click)="anadirDatos(txtNombre.value)" >Guardar datos</button>
+            <!--aca deberia guardar los datos obtenidos de los input
+            <button (click)="anadirDatos(txtNombre.value)" >Guardar datos</button>-->
+            <button type="submit" class="btn btn-primary" >Guardar datos</button>
         </div>
     </form>
 </div>

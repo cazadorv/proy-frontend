@@ -14,7 +14,7 @@ import { ListaClientesService } from './ClientesService/clientes/listaClientes-s
     Listado    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,FormsModule
   ],
   providers: [
     ListaClientesService
