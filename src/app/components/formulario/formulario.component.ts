@@ -1,14 +1,15 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import { Cliente} from '../../Clases/Cliente';
+import { Cliente } from '../../Clases/Cliente';
 
 @Component({
-  selector: 'formularioAlta',
+  selector: 'formulario-Alta',
   templateUrl: './formulario.component.html',
 })
 
-export class FormularioComponent {
-  model: Cliente = new Cliente('','','');
-  @Output() onsubmit= new EventEmitter<any>();
+export class FormularioClientesComponent {
+
+  model: Cliente = new Cliente('','','');  
+  @Output() onsubmit = new EventEmitter<any>();
 
   public submit(){
     this.onsubmit.emit(this.model);
