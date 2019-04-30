@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 
 import { FormularioClientesComponent} from './components/formulario/formulario.component'
 import { ListadoClientesComponent } from './components/listado/listado.component';
-import { ListaClientesService } from './ClientesService/clientes/listaClientes-service'
+import { ListaClienteClaseService } from './Services/listasClientesClases-service/listaClientes-service'
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { ListaClientesService } from './ClientesService/clientes/listaClientes-s
     BrowserModule,FormsModule
   ],
   providers: [
-    ListaClientesService
+    ListaClienteClaseService
   ],
   bootstrap: [AppComponent]
 })
